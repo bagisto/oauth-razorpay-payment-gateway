@@ -13,7 +13,11 @@ laravel-oAuth--razorpay-payment
 
 ### 4. Installation:
 
-* Unzip the respective extension zip and then merge "packages" and "public" folder into project root directory.
+* Run the following command
+
+~~~
+composer require bagisto/oauth-razorpay-payment-gateway
+~~~
 
 * Goto config/app.php file and add following line under 'providers'
 
