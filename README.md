@@ -39,12 +39,6 @@ protected $except = [
 ];
 ~~~
 
-* Goto composer.json file and add following line under 'psr-4'
-
-~~~
-"Webkul\\Razorpay\\": "packages/Webkul/Razorpay/src"
-~~~
-
 * Run these commands below to complete the setup
 
 ~~~
