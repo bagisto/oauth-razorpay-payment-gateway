@@ -50,6 +50,10 @@ composer dump-autoload
 ~~~
 
 ~~~
+php artisan migrate
+~~~
+
+~~~
 php artisan optimize:clear
 ~~~
 
