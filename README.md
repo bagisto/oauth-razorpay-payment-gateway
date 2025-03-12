@@ -13,24 +13,6 @@ laravel-oAuth--razorpay-payment
 
 ### 4. Installation:
 
-* Run the following command
-
-~~~
-composer require bagisto/oauth-razorpay-payment-gateway
-~~~
-
-* Goto config/app.php file and add following line under 'providers'
-
-~~~
-Webkul\Razorpay\Providers\RazorpayServiceProvider::class,
-~~~
-
-* Goto composer.json file and add following line under 'psr-4'
-
-~~~
-"Webkul\\Razorpay\\": "packages/Webkul/Razorpay/src"
-~~~
-
 * Open app\Http\Middleware\VerifyCsrfToken.php and add this route to the exception list:
 
 ~~~
@@ -40,6 +22,10 @@ protected $except = [
 ~~~
 
 * Run these commands below to complete the setup
+
+~~~
+composer require bagisto/oauth-razorpay-payment-gateway
+~~~
 
 ~~~
 composer require razorpay/razorpay
