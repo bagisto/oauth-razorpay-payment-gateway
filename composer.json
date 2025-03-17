@@ -10,7 +10,9 @@
             "homepage": "https://bagisto.com"
         }
     ],
-    "require": {},
+    "require": {
+        "razorpay/razorpay": "*"
+    },
     "autoload": {
         "psr-4": {
             "Webkul\\Razorpay\\": "src/"
