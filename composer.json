@@ -1,18 +1,29 @@
 {
     "name": "bagisto/laravel-razorpay",
+    "description": "OAuth Razorpay Payment Gateway for Bagisto (Partner)",
+    "homepage": "https://github.com/bagisto/oauth-razorpay-payment-gateway",
     "license": "MIT",
     "authors": [
         {
             "name": "Bagisto",
-            "email": "support@bagisto.com"
+            "email": "support@bagisto.com",
+            "homepage": "https://bagisto.com"
         }
     ],
-    "require": {},
+    "require": {
+        "razorpay/razorpay": "*"
+    },
     "autoload": {
         "psr-4": {
             "Webkul\\Razorpay\\": "src/"
         }
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/bagisto/oauth-razorpay-payment-gateway"
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [
