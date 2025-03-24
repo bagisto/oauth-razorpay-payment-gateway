@@ -1,10 +1,19 @@
+<p align="center">
+    <img src="https://bagisto.com/wp-content/themes/bagisto/images/logo.png" />
+    <h2 align="center">OAuth Razorpay Payment Gateway</h2>
+</p>
+
+
 ### 1. Introduction:
-laravel-oAuth-razorpay-payment
+- This module integrates OAuth authentication with the Razorpay payment gateway for Bagisto, a Laravel-based eCommerce framework. It enables secure and seamless payment processing using Razorpay's API.
 
 
 ### 2. Features:
-laravel-oAuth--razorpay-payment
-
+* Seamless Razorpay payment gateway integration with OAuth authentication.
+* Secure payment processing with token-based authentication.
+* Easy setup and configuration within the Bagisto admin panel.
+* Supports multiple payment methods, including cards, UPI, and net banking.
+* Real-time transaction status updates and logs.
 
 ### 3. Requirements:
 
@@ -12,20 +21,6 @@ laravel-oAuth--razorpay-payment
 
 
 ### 4. Installation:
-
-* Unzip the respective extension zip and then merge "packages" and "public" folder into project root directory.
-
-* Goto config/app.php file and add following line under 'providers'
-
-~~~
-Webkul\Razorpay\Providers\RazorpayServiceProvider::class,
-~~~
-
-* Goto composer.json file and add following line under 'psr-4'
-
-~~~
-"Webkul\\Razorpay\\": "packages/Webkul/Razorpay/src"
-~~~
 
 * Open app\Http\Middleware\VerifyCsrfToken.php and add this route to the exception list:
 
@@ -35,16 +30,10 @@ protected $except = [
 ];
 ~~~
 
-* Goto composer.json file and add following line under 'psr-4'
-
-~~~
-"Webkul\\Razorpay\\": "packages/Webkul/Razorpay/src"
-~~~
-
 * Run these commands below to complete the setup
 
 ~~~
-composer require razorpay/razorpay
+composer require bagisto/oauth-razorpay-payment-gateway
 ~~~
 
 ~~~
@@ -52,7 +41,7 @@ composer dump-autoload
 ~~~
 
 ~~~
-php artisan optimize:clear
+php artisan oauth-razorpay:install
 ~~~
 
 > That's it, now just execute the project on your specified domain.
