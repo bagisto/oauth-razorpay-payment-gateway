@@ -1,6 +1,6 @@
 <p align="center">
     <img src="https://bagisto.com/wp-content/themes/bagisto/images/logo.png" />
-    <h2 align="center">Bagisto RMA</h2>
+    <h2 align="center">OAuth Razorpay Payment Gateway</h2>
 </p>
 
 
